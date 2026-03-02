@@ -67,7 +67,7 @@ def run_case_agent(scenario_data: dict) -> dict:
     except Exception as e:
         raise AgentError(f"Failed to initialize OpenAI client: {e}", cause=e) from e
 
-    system_prompt = """You are ComplianceIQ's autonomous KYC agent for Wealthsimple.
+    system_prompt = """You are ComplianceIQ's autonomous KYC agent for financial institutions.
 You are regulated under FINTRAC (Financial Transactions and Reports Analysis Centre of Canada).
 Assess each applicant case for compliance risk. Be thorough but fair.
 Return ONLY valid JSON—no other text before or after."""

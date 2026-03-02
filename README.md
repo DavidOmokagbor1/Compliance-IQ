@@ -1,6 +1,6 @@
 # ComplianceIQ
 
-**Autonomous compliance orchestration for Wealthsimple** — AI-assisted KYC with human-in-the-loop and bias monitoring.
+**Autonomous compliance orchestration for financial institutions** — AI-assisted KYC with human-in-the-loop and bias monitoring.
 
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
@@ -32,13 +32,13 @@
 
 ## About
 
-ComplianceIQ is a **demo application** that showcases how AI can support Know Your Customer (KYC) and Anti-Money Laundering (AML) compliance at scale. Built with Wealthsimple's regulatory context in mind, it demonstrates a human-in-the-loop workflow where an AI agent assesses applicant risk, human arbitrators make final decisions on escalated cases, and a bias monitor tracks approval parity across demographics.
+ComplianceIQ is a **demo application** that showcases how AI can support Know Your Customer (KYC) and Anti-Money Laundering (AML) compliance at scale. Built for financial institutions, it demonstrates a human-in-the-loop workflow where an AI agent assesses applicant risk, human arbitrators make final decisions on escalated cases, and a bias monitor tracks approval parity across demographics.
 
 ---
 
 ## Problem
 
-Wealthsimple must scale KYC/AML compliance while staying **fair** and **auditable**. Manual review of every application doesn't scale; fully automated decisions risk bias and regulatory gaps. Financial institutions need:
+Financial institutions must scale KYC/AML compliance while staying **fair** and **auditable**. Manual review of every application doesn't scale; fully automated decisions risk bias and regulatory gaps. Banks, fintechs, and asset managers need:
 
 - **Speed** — Process applications quickly without bottlenecks
 - **Fairness** — Ensure no demographic group is disproportionately approved or declined
@@ -262,4 +262,4 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 ## Acknowledgments
 
-Built as a demo for Wealthsimple's compliance workflow. FINTRAC-aligned risk assessment; bias monitoring inspired by fairness-in-AI best practices.
+Built as a demo for financial institutions' compliance workflows. FINTRAC-aligned risk assessment; bias monitoring inspired by fairness-in-AI best practices.

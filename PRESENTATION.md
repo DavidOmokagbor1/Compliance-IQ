@@ -1,6 +1,6 @@
 # ComplianceIQ — Presentation Guide
 
-**Step-by-step process to present the app** (Wealthsimple demo, ~7–8 minutes)
+**Step-by-step process to present the app** (Financial institutions demo, ~7–8 minutes)
 
 ---
 
@@ -16,7 +16,7 @@
 ## Step 1: Context (1 min)
 
 **Say:**  
-*"ComplianceIQ is a demo of how AI can support KYC compliance at scale. Wealthsimple needs to process applications quickly while staying fair and auditable. This app shows three pieces: an AI agent that assesses risk, a human arbitrator who makes final calls on escalated cases, and a bias monitor that tracks approval parity."*
+*"ComplianceIQ is a demo of how AI can support KYC compliance at scale. Financial institutions need to process applications quickly while staying fair and auditable. This app shows three pieces: an AI agent that assesses risk, a human arbitrator who makes final calls on escalated cases, and a bias monitor that tracks approval parity."*
 
 ---
 

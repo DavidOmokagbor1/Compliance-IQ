@@ -126,7 +126,7 @@ def _header_bar():
                 font-size: 1rem;
                 font-weight: 500;
             ">
-                Autonomous Compliance Orchestration · Wealthsimple
+                Autonomous Compliance Orchestration · Financial Institutions
             </p>
         </div>
         """,
@@ -139,7 +139,7 @@ def _footer():
     st.markdown(
         """
         <div style="margin-top:48px;padding-top:16px;border-top:1px solid #e2e8f0;color:#94a3b8;font-size:0.75rem;">
-            ComplianceIQ · Wealthsimple AI Builder Prototype · Feb 2026
+            ComplianceIQ · AI-Assisted KYC for Financial Institutions · Feb 2026
         </div>
         """,
         unsafe_allow_html=True,
