@@ -1,0 +1,11 @@
+# Don't copy into Docker image
+.git
+.venv
+venv
+__pycache__
+*.pyc
+.env
+.env.local
+*.md
+.pytest_cache
+complianceiq/decision_log.json

@@ -1,0 +1,19 @@
+# ComplianceIQ — run with: docker-compose up
+# Add your OPENAI_API_KEY to .env in complianceiq/ before running
+
+services:
+  complianceiq:
+    build:
+      context: .
+      dockerfile: complianceiq/Dockerfile
+    ports:
+      - "8501:8501"
+    env_file:
+      - complianceiq/.env
+    environment:
+      - COMPLIANCEIQ_DECISION_LOG_PATH=/data/decision_log.json
+    volumes:
+      - complianceiq-data:/data
+
+volumes:
+  complianceiq-data:

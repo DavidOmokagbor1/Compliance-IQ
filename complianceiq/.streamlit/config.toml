@@ -1,0 +1,13 @@
+# ComplianceIQ — Streamlit config (Figma-style polish)
+[theme]
+primaryColor = "#0E7C7B"
+backgroundColor = "#f8fafc"
+secondaryBackgroundColor = "#ffffff"
+textColor = "#334155"
+font = "sans serif"
+
+[server]
+headless = true
+
+[browser]
+gatherUsageStats = false
