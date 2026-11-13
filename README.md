@@ -2,8 +2,9 @@
 
 **Autonomous compliance orchestration for financial institutions** — AI-assisted KYC with human-in-the-loop and bias monitoring.
 
+[![CI](https://github.com/DavidOmokagbor1/Compliance-IQ/actions/workflows/ci.yml/badge.svg)](https://github.com/DavidOmokagbor1/Compliance-IQ/actions/workflows/ci.yml)
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.28+-red.svg)](https://streamlit.io/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.67-red.svg)](https://streamlit.io/)
 [![OpenAI](https://img.shields.io/badge/OpenAI-GPT--4o-green.svg)](https://openai.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -97,20 +98,21 @@ ComplianceIQ combines three components:
 | **AI** | OpenAI GPT-4o (structured JSON output) |
 | **Persistence** | JSON decision log (Docker volume for production-like setup) |
 | **Tests** | pytest, Streamlit AppTest |
-| **Container** | Docker, docker-compose |
+| **Container** | Docker, Docker Compose |
 
 ---
 
 ## Project Structure
 
 ```
-Compliance IQ/
+Compliance-IQ/
 ├── complianceiq/
 │   ├── app.py              # Streamlit UI (Onboarding Agent, Arbitrator, Bias Monitor)
 │   ├── agent.py            # KYC case agent + arbitrator brief (OpenAI)
 │   ├── bias_monitor.py     # Decision logging, parity checks
-│   ├── mock_data.py       # Demo scenarios (A, B, C)
-│   ├── requirements.txt
+│   ├── mock_data.py        # Demo scenarios (A, B, C)
+│   ├── requirements.txt    # Pinned runtime + test dependencies
+│   ├── Dockerfile
 │   ├── .env.example
 │   ├── .streamlit/config.toml
 │   ├── assets/             # ID photos for demo
@@ -121,7 +123,9 @@ Compliance IQ/
 │       ├── test_e2e.py
 │       ├── test_integration.py
 │       └── test_mock_data.py
+├── .github/workflows/ci.yml
 ├── docker-compose.yml
+├── LICENSE
 ├── PRESENTATION.md         # Step-by-step demo guide
 └── README.md
 ```
@@ -208,11 +212,15 @@ Each scenario includes mock applicant data, ID document, extraction confidence, 
 
 ## Testing
 
+OpenAI calls are mocked in the test suite — no API key or secrets are required.
+
 ```bash
 cd complianceiq
 source .venv/bin/activate
 pytest tests/ -v
 ```
+
+CI runs the same command on every push and pull request via [`.github/workflows/ci.yml`](.github/workflows/ci.yml).
 
 | Test Suite | Coverage |
 |------------|----------|
